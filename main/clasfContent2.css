@@ -1,0 +1,242 @@
+		 /*настройки встроенных классов*/
+body{
+	background-image: url(https://img3.akspic.ru/attachments/crops/1/2/0/1/1/111021/111021-kirpich-material-kirpichnaya_kladka-stena-tekstura-1920x1080.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+header{
+	background-color: rgba(233, 209, 175, 0.7);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .32);
+	border-radius: 10px;
+}
+
+footer{
+	background-color: rgba(233, 209, 175, 0.7);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .32);
+	border-radius: 10px;
+}
+
+h3{
+	font-family: Raleway, sans-serif;
+	font-size: 32px;
+}
+
+h4{
+	font-family: Raleway, sans-serif;
+	font-size: 24px;
+}
+
+h5{
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	margin: 5px;
+}
+
+p{
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+	text-overflow: clip;
+	text-align: justify;
+	text-indent: 20px;
+}
+
+i{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+hr{
+	margin: -30px 0 30px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+	width: 95%;
+}
+
+		 /*настройки пользовательских классов*/
+
+.containerH{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0px;					   /*поля от верхнего и нижнего краёв, второе — от левого и правого*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.16);
+}
+
+.containerF{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px;					   /*поля от верхнего и нижнего краёв, второе — от левого и правого*/
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.16);
+}
+
+.logo{
+	width: 50px;  /*ширина изображения*/
+	height: 50px; /*высота изображения*/
+	padding: 10px; /*1 значение - поля будут установлены одновременно c каждого края элемента*/
+	margin-left: 25px;
+}
+
+.logoImg{
+	transition-duration: 1s;
+	max-width: 100%; /*устанавливает размер картинки для сохранения пропорций*/
+	display: inline-block;
+	overflow: hidden; /*отображается только область внутри элемента, остальное будет скрыто*/
+}
+
+.logoImg img{
+	transition: 1s; /*устанавливает эффект перехода между двумя состояниями элемента*/
+	display: block;
+}
+
+.logoImg:hover{
+	transform: scale(1.2);	/*позволяет масштабировать элемент, вращать, сдвигать, наклонять, а также комбинировать*/
+	transition-duration: 0.5s;
+}
+
+.title{
+	display: inline;		/*элемент отображается как строчный. Использование блочных элементов, таких, как <div> и <p>,*/
+	text-decoration: none;						/*автоматически создаёт перенос и показывает их содержимое с новой строки*/
+	font-size: 32px;	 	/*размер шрифта*/
+	font-weight: 800;
+	letter-spacing: 3px; /*отступы между буквами*/
+	margin-left: 130px; /*правила такие же как у padding*/
+	color: black;
+
+}
+
+.menu{
+	list-style-type: none;	/*отменяет маркеры для списка*/
+	font-size: 18px;
+	padding: 10px;
+	margin-right: 15px;
+}
+
+.menu li{
+	display: inline-block;	/*Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы*/
+	padding: 0 10px;		/*подобно строчному элементу. Фактически такой элемент по своему действию похож на встраиваемые*/
+}							/*элементы. При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как строчный.*/
+
+.menu li a{
+	display: block;			/*элемент показывается как блочный*/
+	text-decoration: none;	/*отменяет все эффекты, которые заданы по умолчанию*/
+	transition-duration: 1s;
+	color: black;
+}
+
+.menu li a:hover{			/*...при наведении на него курсора мыши...*/
+	transition-duration: 0.5s;
+	color: blanchedalmond;
+}
+
+.ccc{
+	padding: 10px 0px;
+}
+
+.containerMain{
+  padding: 25px 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: stretch;			/*Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.*/
+  justify-content: center;		/*Флексы выравниваются по центру строки.*/
+  flex-wrap: wrap;				/*Флексы выстраиваются в несколько строк, их направление задаётся свойством flex-direction*/
+  flex-direction: column;		/*Главная ось флексов располагается вертикально и направлена сверху вниз.*/
+  background-color: rgba(233, 209, 175, 0.7);
+  border-radius: 10px;
+}
+
+.block{					/*родительский контейнер*/
+}
+
+.block__row{			/*общие настройки флексов*/
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.block__element_1{		/*обычное расположение флека*/
+	flex: 0 1 100%;
+}
+
+.block__element_2{		/*два контейнера рядом: левый*/
+	flex: 0 1 50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 700px;
+}
+
+.block__element_3{		/*два контейнера рядом: правый*/
+	flex: 0 1 50%;
+}
+
+.block__content{		/*настройки для контента внутри элемета*/
+
+}
+
+.gif{					/*гифка анимации тактов*/
+	height: 500px;
+	width: 300px;
+	border-radius: 20px;
+}
+
+.adaptiveImg{
+	position: relative;		/*Положение элемента устанавливается относительно его исходного места.*/
+	min-height: 900px;		/*left, top, right и bottom изменяет позицию элемента и сдвигает его.*/
+	min-width: 900px;
+}
+
+.adaptiveImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;		/*Элемент увеличивается или уменьшается, чтобы целиком заполнить заданную область с сохранением пропорций.*/
+	position: absolute;		/*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются*/
+	top: 0px;											/*на веб-странице словно абсолютно позиционированного элемента и нет*/
+	left: 0px;
+}
+
+.aI14{
+	position: relative;
+	min-height: 100px;
+	min-width: 200px;	
+}
+
+.aI14 img{
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.navTitle{
+	font-size: 20px;
+	font-family: Raleway, sans-serif;
+	font-weight: 800;
+}
+
+.btn{
+	width: 50px;
+	height: 50px;
+}
+
+.hide{
+	opacity: 0;
+}
